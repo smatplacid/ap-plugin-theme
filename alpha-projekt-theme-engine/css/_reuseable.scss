@@ -1,0 +1,27 @@
+@import "get";
+
+.green-uniton {
+	background: $primary-color-green;
+}
+
+.border-10 {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.border-20 {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.extra-space {}
+
+.uppercase, #main .uppercase {
+	text-transform: uppercase;
+}
+
+.bold, #main .bold {
+	font-weight: bold;
+}

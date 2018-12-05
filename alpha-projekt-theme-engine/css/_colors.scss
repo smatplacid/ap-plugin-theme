@@ -1,0 +1,57 @@
+/* HEADER */
+body {
+	&.home {
+		&.header_position_over:not(.top_panel_fixed) .sc_layouts_row_fixed_on {
+			background: #000 !important;
+		}
+	}
+
+	&.header_position_over:not(.top_panel_fixed) .sc_layouts_row_fixed_on,
+	.sc_layouts_row_fixed.scheme_dark {
+		background: #000;
+	}
+
+	&.scheme_default.desktop_layout .scheme_dark.sc_layouts_row_fixed_on {
+		background-color: #191b1c;
+	}
+
+}
+
+/* BUTTONS */
+body {
+	&.scheme_default .sc_button_hover_style_inverse.sc_button_hover_slide_left {
+		background: none !important;
+		background-color: white !important;
+		color: $tertiary-color-red !important;
+		border-color: $tertiary-color-red !important;
+
+		&:hover {
+			background: none !important;
+			background-color: $tertiary-color-red !important;
+		}
+	}
+
+	.scheme_default .sc_button_hover_slide_left {
+		background: linear-gradient(to right, $tertiary-color-red 50%,$tertiary-color-red 50%) no-repeat scroll right bottom / 210% 100% $tertiary-color-red !important;
+	}
+}
+
+/* ELEMETS */
+body {
+	&.scheme_default .widget .widget_title:before,
+	&.scheme_default .widget .widgettitle:before {
+		color: $primary-color-dark-blue;
+	}
+}
+
+/* FOOTER */
+body {
+	.scheme_dark.footer_wrap,
+	.footer_wrap .scheme_dark.vc_row {
+		color: #8e8e8e;
+	}
+
+	.scheme_dark.footer_wrap a {
+		color: $secondary-color-light-blue
+	}
+}

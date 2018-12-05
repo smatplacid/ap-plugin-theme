@@ -1,0 +1,55 @@
+@import "get";
+
+body.home {
+	.green-blue {
+		margin-top: -120px;
+		padding-top: 50px !important;
+	}
+
+	.green {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#85a700+20,afcf25+100 */
+		background: #85a700; /* Old browsers */
+		background: -moz-linear-gradient(45deg, #85a700 20%, #afcf25 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(45deg, #85a700 20%, #afcf25 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(45deg, #85a700 20%, #afcf25 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#85a700', endColorstr='#afcf25', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+	}
+
+	.as-flex {
+		@include flex;
+	}
+
+	.v-centered {
+		@include align-items();
+	}
+
+	//.width-100 .fusion-fullwidth {
+	//	margin-left: -30px;
+	//	margin-right: -30px;
+	//}
+
+	.home-slider.su-row {
+		.su-column.text {
+			margin: 0 2%;
+		}
+
+		.text {
+			color: white;
+		}
+
+		.projekt-title {
+			color: $tertiary-color-blue-dark
+		}
+
+		.link-text {
+			a {
+				color: $tertiary-color-blue-dark !important;
+				text-decoration: underline;
+				padding: 0;
+			}
+		}
+	}
+
+	.negative {
+	}
+}

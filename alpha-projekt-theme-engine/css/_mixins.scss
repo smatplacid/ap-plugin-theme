@@ -1,0 +1,89 @@
+// Loops : https://stackoverflow.com/questions/43506814/scss-sass-shortcode-or-simplification
+// Alles mögliche : https://css-tricks.com/snippets/sass/
+// IF und VARIABLEN : https://scotch.io/tutorials/how-to-use-sass-mixins
+
+@mixin ie11 {
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		@content;
+	}
+}
+
+// IE HACK !!!! : https://gist.github.com/zunairmushtaq/aeaa48432d51cad0eb1c
+
+@mixin anwalt-width() {
+	$a: 100% / 3;
+	$b: 6px;
+
+	width: -webkit-calc(#{$a} - #{$b});
+	width: -moz-calc(#{$a} - #{$b});
+	width: calc(#{$a} - #{$b});
+}
+
+@function calculateRem($size) {
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
+}
+
+@function calculateRemLH($size) {
+	$size: $size + 8px;
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
+}
+
+@mixin font-size($size, $inset:"") {
+	font-size: $size unquote($inset);
+	font-size: calculateRem($size) unquote($inset);
+}
+
+@mixin line-height($size, $inset:"") {
+	line-height: $size unquote($inset);
+	line-height: calculateRemLH($size) unquote($inset);
+}
+
+// antialiasing mode font rendering
+
+@mixin font-smoothing {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin flex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+@mixin align-items($align: center) {
+	-webkit-box-align: $align;
+	-moz-box-align: $align;
+	-ms-flex-align: $align;
+	-webkit-align-items: $align;
+	align-items: $align;
+}
+
+@mixin align-content($align: center) {
+	-webkit-align-content: $align;
+	-ms-flex-line-pack: $align;
+	align-content: $align;
+}
+
+@mixin justify-content($align: center) {
+	-webkit-box-pack: $align;
+	-webkit-justify-content: $align;
+	-ms-flex-pack: $align;
+	justify-content: $align;
+}
+
+@mixin justify-items($align: center) {
+	justify-items: $align;
+}
+
+@mixin transition($name: all, $duration: .5s) {
+	-webkit-transition: $name $duration;
+	-moz-transition: $name $duration;
+	-ms-transition: $name $duration;
+	-o-transition: $name $duration;
+	transition: $name $duration;
+}

@@ -1,0 +1,83 @@
+/*
+https://www.sitepoint.com/using-sass-maps/
+https://codepen.io/j_holtslander/pen/jbEGWb
+ */
+
+/* MEDIA QUERIES */
+$xs: 25em; /* ~ 400px */
+$sm: 34em; /* ~ 544px */
+$md: 48em; /* ~ 768px */
+$lg: 62em; /* ~ 992px */
+$xl: 75em; /* ~1200px */
+
+@mixin minMQ($canvas) {
+	@if $canvas == xs {
+		@media only screen and (min-width: $xs) { @content; }
+	}
+	@else if $canvas == sm {
+		@media only screen and (min-width: $sm) { @content; }
+	}
+	@else if $canvas == md {
+		@media only screen and (min-width: $md) { @content; }
+	}
+	@else if $canvas == lg {
+		@media only screen and (min-width: $lg) { @content; }
+	}
+	@else if $canvas == xl {
+		@media only screen and (min-width: $xl) { @content; }
+	}
+	@else {
+		@media only screen and (min-width: #{$canvas}px) { @content; }
+	}
+}
+
+@mixin maxMQ($canvas) {
+	@if $canvas == xs {
+		@media only screen and (max-width: $xs) { @content; }
+	}
+	@else if $canvas == sm {
+		@media only screen and (max-width: $sm) { @content; }
+	}
+	@else if $canvas == md {
+		@media only screen and (max-width: $md) { @content; }
+	}
+	@else if $canvas == lg {
+		@media only screen and (max-width: $lg) { @content; }
+	}
+	@else if $canvas == xl {
+		@media only screen and (max-width: $xl) { @content; }
+	}
+	@else {
+		@media only screen and (max-width: #{$canvas}px) { @content; }
+	}
+}
+
+
+
+@mixin MQtablet {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { @content; }
+}
+
+@mixin MQtablet_portrait {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) { @content; }
+}
+
+@mixin MQtablet_landscape {
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) { @content; }
+}
+
+@mixin MQphone_s {
+	@media only screen and (max-device-width: 330px) and (orientation: portrait) { @content; }
+}
+
+@mixin MQphone_m {
+	@media only screen and (max-device-width: 430px) and (orientation: portrait) { @content; }
+}
+
+@mixin MQphone_l {
+	@media only screen and (max-device-width: 667px) and (orientation: portrait) { @content; }
+}
+
+@mixin MQphone_landscape {
+	@media only screen and (max-device-width: 740px) and (orientation: landscape) { @content; }
+}

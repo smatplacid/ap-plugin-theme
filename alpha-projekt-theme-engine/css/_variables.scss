@@ -1,0 +1,81 @@
+$primary-color-green: #AFCF25; /* b7cd00 */
+$primary-color-green-light: lighten($primary-color-green, 5%);
+//$primary-color-green-dark: darken($primary-color-green, 7%);
+$primary-color-green-dark: #85a700;
+
+$secondary-color-blue: #009fe3;
+$secondary-color-blue-light: lighten($secondary-color-blue, 5%);
+$secondary-color-blue-dark: darken($secondary-color-blue, 10%);
+
+$tertiary-color-blue-dark: #29436f;
+
+//$secondary-mod-1: #96A6AF;
+//$tertiary-color-red: #D24440;
+
+$grey: #7C9799;
+
+$bold: 500;
+
+$language-desk: (de, 0),
+		(en, -25),
+		(us, -50),
+		(fr, -75),
+		(it, -100),
+		(es, -125),
+		(pt, -150),
+		(tk, -175),
+		(jp, -200),
+		(eu, -225);
+
+$fa-font-path: "../font-awesome/webfonts";
+
+// ICON DEFS
+%icon-18 {
+	position: absolute;
+	cursor: pointer;
+
+	& > svg {
+		height: 18px;
+		width: 18px;
+	}
+}
+
+
+%name-inside {
+	img {
+		opacity: 1;
+		transition: opacity .3s;
+		cursor: pointer;
+		position: relative;
+	}
+
+	p.name {
+		position: relative;
+		bottom: 40px;
+		margin: auto;
+		color: #132C50;
+		opacity: 0;
+		transition: all .3s;
+		text-align: center;
+		//line-height: 1;
+
+		span {
+			font-weight: 700;
+			display: block;
+		}
+
+		i {
+			display: block;
+		}
+	}
+
+	&:hover {
+		img {
+			opacity: .3;
+		}
+
+		p.name {
+			opacity: 1;
+		}
+	}
+}

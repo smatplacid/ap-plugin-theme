@@ -1,0 +1,134 @@
+@import "get";
+
+.pressebereich, #main .pressebereich {
+	h2 {
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	a {
+		padding: 0;
+		text-decoration: underline;
+		color: $tertiary-color-blue-dark;
+		font-size: 16px;
+
+		& + br + a {
+			margin-top: 10px;
+			display: inline-block;
+		}
+	}
+
+}
+
+.kontaktdaten {
+	img {
+		width: auto;
+		height: 40px;
+	}
+
+	.su-column-size-4-5 {
+
+		a, strong {
+			padding: 0;
+			color: $tertiary-color-blue-dark;
+			line-height: 40px;
+			font-size: 1.5em;
+			font-weight: normal;
+		}
+	}
+}
+
+.kontaktform-cf7 {
+
+	input[type="text"], input[type="email"], textarea {
+		border: 1px solid $primary-color-green;
+		padding: 10px;
+		color: $tertiary-color-blue-dark;
+		font-weight: bold;
+		transition: all .5s;
+
+		&:focus, &:active {
+			border: 1px solid $tertiary-color-blue-dark;
+			outline: none;
+			background: rgba($primary-color-green, .05)
+		}
+	}
+
+	input[type="text"], input[type="email"] {
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+	}
+
+	textarea {
+		min-height: 250px;
+	}
+
+	input[type="submit"] {
+		-webkit-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.3);
+		margin: auto;
+		display: block;
+	}
+
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		color: $primary-color-green;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		@include font-size(12px);
+	}
+
+	::-moz-placeholder { /* Firefox 19+ */
+		color: $primary-color-green;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		@include font-size(12px);
+	}
+
+	:-ms-input-placeholder { /* IE 10+ */
+		color: $primary-color-green;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		@include font-size(12px);
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+		color: $primary-color-green;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		@include font-size(12px);
+	}
+
+	.small {
+		@include font-size(12px);
+	}
+
+}
+
+.bubble {
+	&:before {
+		left: -100px;
+		top: 9%;
+		position: absolute;
+		content: '';
+		width: 100px;
+		height: 100px;
+		background: url('../images/cf-ribbon.png') no-repeat;
+		background-size: contain;
+		background-position-x: right;
+	}
+}
+
+#main .kontakt-links {
+	h2 {
+		color: $tertiary-color-blue-dark;
+		line-height: 40px;
+		font-size: 1.5em;
+		font-weight: normal;
+	}
+}

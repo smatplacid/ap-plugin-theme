@@ -1,0 +1,16 @@
+/* TEXT ALIGN */
+.tac { text-align: center; }
+.tal { text-align: left; }
+.tar { text-align: right; }
+
+/* POSITION */
+.poa { position: absolute; }
+.por { position: relative; }
+
+/* TYPO*/
+.strong, .bold { font-weight: $bold; }
+.underline { text-decoration: underline; }
+.upper, .uppercase { text-transform: uppercase; }
+
+/* CUSTOM */
+.custom-strong { font-weight: $bold; letter-spacing: 2px; }

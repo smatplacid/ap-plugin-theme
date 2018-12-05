@@ -1,0 +1,105 @@
+//@import "static";
+//@import "fonts";
+//
+//@import "init";
+//
+//@import "colors";
+@import "tmp";
+@import "home";
+@import "header";
+@import "projekte";
+@import "reuseable";
+@import "kontakt_presse";
+@import "foerderer";
+
+//@import "woocommerce";
+
+.fusion-footer-widget-area .fusion-row {
+	max-width: 1100px;
+}
+
+h3.welle-weiss {
+	background: url(../images/wellen-weiss.svg) no-repeat;
+	background-position-y: bottom;
+	background-size: 50px;
+	padding-left: 15px;
+	margin-left: -15px;
+	margin-bottom: -0.4em;
+	padding-bottom: 0.4em;
+}
+
+//.fusion-header-wrapper {
+//	position: relative;
+//	z-index: 9;
+//}
+
+/* The Overlay (background) */
+.overlay:not(.fake-class) {
+	//display: none;
+	/* Height & width depends on how you want to reveal the overlay (see JS below) */
+	height: 100%;
+	width: 100%;
+	position: fixed; /* Stay in place */
+	z-index: 20010; /* Sit on top */
+	left: 0;
+	top: 0;
+	background-color: white; /* Black fallback color */
+	background-color: rgba(white, 0.9);
+	overflow-x: hidden; /* Disable horizontal scroll */
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
+}
+
+.overlay:not(.fake-class) .overlay-content {
+	position: relative;
+	top: 15%; /* 25% from the top */
+	width: 100%; /* 100% width */
+	text-align: left; /* Centered text/links */
+	margin: 30px auto 0;
+	max-width: 1100px;
+	box-shadow: 0 0 20px rgba(black, .3);
+	border: 10px solid white;
+}
+
+.overlay:not(.fake-class) .overlay-inner {
+	background: white;
+	padding: 10px;
+}
+
+
+//a {
+//	padding: 8px;
+//	text-decoration: none;
+//	font-size: 36px;
+//	color: #818181;
+//	display: block; /* Display block instead of inline */
+//	transition: 0.3s; /* Transition effects on hover (color) */
+//}
+
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .popup-close {
+	position: fixed;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+	z-index: 10;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+	.overlay a {
+		font-size: 20px
+	}
+	.overlay .popup-close {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+}

@@ -1,0 +1,564 @@
+.negative-margin-30 {
+  margin-left: -30px;
+  margin-right: -30px; }
+
+/*
+https://www.sitepoint.com/using-sass-maps/
+https://codepen.io/j_holtslander/pen/jbEGWb
+ */
+/* MEDIA QUERIES */
+/* ~ 400px */
+/* ~ 544px */
+/* ~ 768px */
+/* ~ 992px */
+/* ~1200px */
+/* b7cd00 */
+body.home .green-blue {
+  margin-top: -120px;
+  padding-top: 50px !important; }
+body.home .green {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#85a700+20,afcf25+100 */
+  background: #85a700;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #85a700 20%, #afcf25 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #85a700 20%, #afcf25 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #85a700 20%, #afcf25 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#85a700', endColorstr='#afcf25', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */ }
+body.home .as-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+body.home .v-centered {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+body.home .home-slider.su-row .su-column.text {
+  margin: 0 2%; }
+body.home .home-slider.su-row .text {
+  color: white; }
+body.home .home-slider.su-row .projekt-title {
+  color: #29436f; }
+body.home .home-slider.su-row .link-text a {
+  color: #29436f !important;
+  text-decoration: underline;
+  padding: 0; }
+
+/*
+https://www.sitepoint.com/using-sass-maps/
+https://codepen.io/j_holtslander/pen/jbEGWb
+ */
+/* MEDIA QUERIES */
+/* ~ 400px */
+/* ~ 544px */
+/* ~ 768px */
+/* ~ 992px */
+/* ~1200px */
+/* b7cd00 */
+.fusion-logo-link img {
+  height: 100px; }
+
+.fusion-main-menu > ul > li > a, .fusion-vertical-menu-widget ul.menu li a, .side-nav li a {
+  font-weight: 400 !important; }
+
+/*
+https://www.sitepoint.com/using-sass-maps/
+https://codepen.io/j_holtslander/pen/jbEGWb
+ */
+/* MEDIA QUERIES */
+/* ~ 400px */
+/* ~ 544px */
+/* ~ 768px */
+/* ~ 992px */
+/* ~1200px */
+/* b7cd00 */
+body.single-projekte #main {
+  padding-left: 30px;
+  padding-right: 30px; }
+  @media only screen and (min-width: 1200px) {
+    body.single-projekte #main {
+      padding: 0; } }
+  body.single-projekte #main .post {
+    margin-bottom: 0; }
+  body.single-projekte #main .fusion-fullwidth:last-child .fusion-text > p {
+    margin-bottom: 15px; }
+body.single-projekte .projekt-title-with-image {
+  font-size: 14pt;
+  color: #29436f;
+  padding: 0 10px 10px 0 !important;
+  background: url(../images/baum-green-1.png) no-repeat;
+  background-position: bottom right;
+  min-width: 150px;
+  display: inline-block; }
+body.single-projekte .projekt-einzelbild {
+  text-align: center; }
+body.single-projekte .projekt-back-to-all {
+  font-weight: bold; }
+  body.single-projekte .projekt-back-to-all span {
+    font-size: 12px !important; }
+
+body.single-projekte .projekt-title, body .overlay .projekt-title {
+  font-size: 24pt;
+  color: #009fe3;
+  line-height: 1.2;
+  padding-bottom: 0.4em;
+  display: block; }
+body.single-projekte .projekt-category, body .overlay .projekt-category {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  color: #29436f;
+  padding: 0 10px 10px 0;
+  background: url(../images/baum-green-1.png) no-repeat;
+  background-position: bottom right;
+  min-width: 150px;
+  display: inline-block;
+  margin-bottom: 50px; }
+body.single-projekte .projekt-single-content .fusion-text.intro, body.single-projekte .projekt .overlay-content-inner .fusion-text.intro, body .overlay .projekt-single-content .fusion-text.intro, body .overlay .projekt .overlay-content-inner .fusion-text.intro {
+  font-size: 120%;
+  font-style: italic; }
+
+body .projekt-holder {
+  padding: 50px 0; }
+
+.projekt-list {
+  list-style-position: outside;
+  list-style-type: disc;
+  padding: 5px;
+  padding-left: 33px;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  background-image: url(../images/list-item.png);
+  background-repeat: no-repeat;
+  background-position: left top; }
+  .projekt-list a {
+    padding-left: 0; }
+
+.su-button-style-flat:hover span {
+  top: 0; }
+
+.su-button.spende {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  transition: all .3s; }
+  .su-button.spende:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); }
+    .su-button.spende:hover span {
+      top: 0; }
+  .su-button.spende span {
+    font-weight: bold !important;
+    font-size: 10px !important;
+    line-height: 16px !important;
+    padding: 5px !important; }
+
+.su-button.blau {
+  background: #009fe3 !important; }
+
+.su-button.gruen {
+  background: #AFCF25 !important; }
+
+/* KARTE */
+body .outer-map-wrapper {
+  padding-top: 100px; }
+  body .outer-map-wrapper .inner-map-wrapper {
+    position: relative; }
+  body .outer-map-wrapper .inner-map-image-wrapper {
+    text-align: center; }
+    body .outer-map-wrapper .inner-map-image-wrapper img {
+      height: auto;
+      width: 100%;
+      max-width: 1000px; }
+  body .outer-map-wrapper .inner-map-project-wrapper .projekt-float {
+    background: whitesmoke;
+    position: absolute;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-image: url(../images/corner.png);
+    background-repeat: no-repeat; }
+    body .outer-map-wrapper .inner-map-project-wrapper .projekt-float.klein {
+      padding: 10px;
+      font-size: 70%; }
+      body .outer-map-wrapper .inner-map-project-wrapper .projekt-float.klein .link-arrow-down {
+        border-left-width: 6px;
+        border-right-width: 6px;
+        border-top-width: 6px; }
+    body .outer-map-wrapper .inner-map-project-wrapper .projekt-float.mittel {
+      padding: 15px;
+      font-size: 80%; }
+      body .outer-map-wrapper .inner-map-project-wrapper .projekt-float.mittel .link-arrow-down {
+        border-left-width: 7px;
+        border-right-width: 7px;
+        border-top-width: 7px; }
+    body .outer-map-wrapper .inner-map-project-wrapper .projekt-float.gross {
+      padding: 20px;
+      font-size: 90%; }
+      body .outer-map-wrapper .inner-map-project-wrapper .projekt-float.gross .link-arrow-down {
+        border-left-width: 10px;
+        border-right-width: 10px;
+        border-top-width: 10px; }
+    body .outer-map-wrapper .inner-map-project-wrapper .projekt-float.float-clicked {
+      z-index: 999; }
+    body .outer-map-wrapper .inner-map-project-wrapper .projekt-float.left-top {
+      background-position: left -30px top -30px; }
+    body .outer-map-wrapper .inner-map-project-wrapper .projekt-float.right-top {
+      background-position: right -30px top -30px; }
+    body .outer-map-wrapper .inner-map-project-wrapper .projekt-float.right-bottom {
+      background-position: right -30px bottom -30px; }
+    body .outer-map-wrapper .inner-map-project-wrapper .projekt-float.left-bottom {
+      background-position: left -30px bottom -30px; }
+    body .outer-map-wrapper .inner-map-project-wrapper .projekt-float.float-text {
+      top: 20px;
+      left: 40px;
+      width: 300px;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid #e57528; }
+      body .outer-map-wrapper .inner-map-project-wrapper .projekt-float.float-text p {
+        color: #e57528;
+        padding: 0;
+        margin: 0; }
+  body .outer-map-wrapper .inner-map-project-wrapper .projekt-titel {
+    font-weight: bold;
+    margin: 5px 0 3px; }
+  body .outer-map-wrapper .inner-map-project-wrapper .projekt-kategorie {
+    padding: 0 10px 10px 0 !important;
+    background: url(../images/baum-green-1.png) no-repeat;
+    background-position: bottom right;
+    min-width: 70px;
+    display: inline-block;
+    color: #AFCF25;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 80%; }
+  body .outer-map-wrapper .inner-map-project-wrapper .projekt-auszug {
+    /* letter-spacing: -0.3px; */
+    font-style: italic;
+    /* line-height: 1.3; */ }
+  body .outer-map-wrapper .inner-map-project-wrapper .projekt-popup-link {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 70%;
+    cursor: pointer; }
+    body .outer-map-wrapper .inner-map-project-wrapper .projekt-popup-link .link-text {
+      -webkit-box-ordinal-group: 1;
+      -moz-box-ordinal-group: 1;
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center; }
+    body .outer-map-wrapper .inner-map-project-wrapper .projekt-popup-link .link-arrow-down {
+      -webkit-box-ordinal-group: 1;
+      -moz-box-ordinal-group: 1;
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-box-flex: 0;
+      -moz-box-flex: 0;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      width: 0;
+      height: 0;
+      border-left-style: solid;
+      border-left-color: transparent;
+      border-right-style: solid;
+      border-right-color: transparent;
+      border-top-style: solid;
+      border-top-color: #29436f; }
+  body .outer-map-wrapper .inner-map-project-wrapper .level-1 {
+    z-index: 2; }
+  body .outer-map-wrapper .inner-map-project-wrapper .level-2 {
+    z-index: 3; }
+  body .outer-map-wrapper .inner-map-project-wrapper .level-3 {
+    z-index: 4; }
+  body .outer-map-wrapper .inner-map-project-wrapper .level-4 {
+    z-index: 5; }
+  body .outer-map-wrapper .inner-map-project-wrapper .level-5 {
+    z-index: 6; }
+  body .outer-map-wrapper .inner-map-project-wrapper .level-6 {
+    z-index: 7; }
+  body .outer-map-wrapper .inner-map-project-wrapper .level-7 {
+    z-index: 8; }
+  body .outer-map-wrapper .inner-map-project-wrapper .level-8 {
+    z-index: 9; }
+  body .outer-map-wrapper .inner-map-project-wrapper .level-9 {
+    z-index: 10; }
+  body .outer-map-wrapper .inner-map-project-wrapper .level-10 {
+    z-index: 11; }
+
+/* OVERLAY */
+body .overlay .fusion-fullwidth {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+/*
+https://www.sitepoint.com/using-sass-maps/
+https://codepen.io/j_holtslander/pen/jbEGWb
+ */
+/* MEDIA QUERIES */
+/* ~ 400px */
+/* ~ 544px */
+/* ~ 768px */
+/* ~ 992px */
+/* ~1200px */
+/* b7cd00 */
+.green-uniton {
+  background: #AFCF25; }
+
+.border-10 {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
+
+.border-20 {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px; }
+
+.uppercase, #main .uppercase {
+  text-transform: uppercase; }
+
+.bold, #main .bold {
+  font-weight: bold; }
+
+/*
+https://www.sitepoint.com/using-sass-maps/
+https://codepen.io/j_holtslander/pen/jbEGWb
+ */
+/* MEDIA QUERIES */
+/* ~ 400px */
+/* ~ 544px */
+/* ~ 768px */
+/* ~ 992px */
+/* ~1200px */
+/* b7cd00 */
+.pressebereich h2, #main .pressebereich h2 {
+  font-weight: bold;
+  text-transform: uppercase; }
+.pressebereich a, #main .pressebereich a {
+  padding: 0;
+  text-decoration: underline;
+  color: #29436f;
+  font-size: 16px; }
+  .pressebereich a + br + a, #main .pressebereich a + br + a {
+    margin-top: 10px;
+    display: inline-block; }
+
+.kontaktdaten img {
+  width: auto;
+  height: 40px; }
+.kontaktdaten .su-column-size-4-5 a, .kontaktdaten .su-column-size-4-5 strong {
+  padding: 0;
+  color: #29436f;
+  line-height: 40px;
+  font-size: 1.5em;
+  font-weight: normal; }
+
+.kontaktform-cf7 input[type="text"], .kontaktform-cf7 input[type="email"], .kontaktform-cf7 textarea {
+  border: 1px solid #AFCF25;
+  padding: 10px;
+  color: #29436f;
+  font-weight: bold;
+  transition: all .5s; }
+  .kontaktform-cf7 input[type="text"]:focus, .kontaktform-cf7 input[type="text"]:active, .kontaktform-cf7 input[type="email"]:focus, .kontaktform-cf7 input[type="email"]:active, .kontaktform-cf7 textarea:focus, .kontaktform-cf7 textarea:active {
+    border: 1px solid #29436f;
+    outline: none;
+    background: rgba(175, 207, 37, 0.05); }
+.kontaktform-cf7 input[type="text"], .kontaktform-cf7 input[type="email"] {
+  height: 40px;
+  line-height: 40px;
+  text-align: center; }
+.kontaktform-cf7 textarea {
+  min-height: 250px; }
+.kontaktform-cf7 input[type="submit"] {
+  -webkit-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.3);
+  margin: auto;
+  display: block; }
+.kontaktform-cf7 ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #AFCF25;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px ;
+  font-size: 0.75rem ; }
+.kontaktform-cf7 ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #AFCF25;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px ;
+  font-size: 0.75rem ; }
+.kontaktform-cf7 :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #AFCF25;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px ;
+  font-size: 0.75rem ; }
+.kontaktform-cf7 :-moz-placeholder {
+  /* Firefox 18- */
+  color: #AFCF25;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px ;
+  font-size: 0.75rem ; }
+.kontaktform-cf7 .small {
+  font-size: 12px ;
+  font-size: 0.75rem ; }
+
+.bubble:before {
+  left: -100px;
+  top: 9%;
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 100px;
+  background: url("../images/cf-ribbon.png") no-repeat;
+  background-size: contain;
+  background-position-x: right; }
+
+#main .kontakt-links h2 {
+  color: #29436f;
+  line-height: 40px;
+  font-size: 1.5em;
+  font-weight: normal; }
+
+.clap-wrap.padding-fix .clap-wrap-item:nth-child(1) {
+  padding-right: 2%; }
+.clap-wrap.padding-fix .clap-wrap-item:nth-child(2) {
+  padding-left: 2%; }
+.clap-wrap.padding-fix span {
+  display: block;
+  margin-bottom: 1.5em; }
+
+.btn-clap.no-style {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-decoration: underline;
+  padding: 0; }
+  .btn-clap.no-style.open {
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center; }
+
+.personen h2, #main .personen h2 {
+  padding: 10px;
+  text-align: center; }
+
+.fusion-footer-widget-area .fusion-row {
+  max-width: 1100px; }
+
+h3.welle-weiss {
+  background: url(../images/wellen-weiss.svg) no-repeat;
+  background-position-y: bottom;
+  background-size: 50px;
+  padding-left: 15px;
+  margin-left: -15px;
+  margin-bottom: -0.4em;
+  padding-bottom: 0.4em; }
+
+/* The Overlay (background) */
+.overlay:not(.fake-class) {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 20010;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: white;
+  /* Black fallback color */
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear; }
+
+.overlay:not(.fake-class) .overlay-content {
+  position: relative;
+  top: 15%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: left;
+  /* Centered text/links */
+  margin: 30px auto 0;
+  max-width: 1100px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border: 10px solid white; }
+
+.overlay:not(.fake-class) .overlay-inner {
+  background: white;
+  padding: 10px; }
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1; }
+
+/* Position the close button (top right corner) */
+.overlay .popup-close {
+  position: fixed;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  z-index: 10; }
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px; }
+
+  .overlay .popup-close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px; } }
+
+/*# sourceMappingURL=style.css.map */

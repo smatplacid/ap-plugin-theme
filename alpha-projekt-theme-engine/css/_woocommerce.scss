@@ -1,0 +1,46 @@
+.woocommerce,
+.woocommerce-page {
+	ul.products {
+		li.product {
+			.post_data {
+				min-height: 360px;
+			}
+		}
+	}
+}
+
+.woocommerce div.product .product_title {
+	display: block;
+	@include font-size(26px);
+	padding-bottom: .5em;
+}
+
+.slick-ul-inside {
+	.slick-slider {
+		position: relative;
+
+		.slick-arrow {
+			position: absolute;
+			top: -35px;
+			cursor: pointer;
+			padding: 10px;
+		}
+
+		.fa-arrow-right.slick-arrow {
+			left: 40px;
+		}
+	}
+}
+
+.scheme_default .woocommerce span.onsale,
+.woocommerce ul.products li.product .onsale,
+.woocommerce-page ul.products li.product .onsale{
+	background: url(../img/sale.png) no-repeat;
+	height: 9em;
+	width: 6em;
+	background-size: contain;
+	border-radius: 0;
+}
+
+
+

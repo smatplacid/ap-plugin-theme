@@ -1,0 +1,96 @@
+@import "init";
+@import "colors";
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/376eeb");
+
+@font-face {
+	font-family: 'VAGRoundedLTPro-Black';
+	src: url('../webfonts/376EEB_0_0.eot');
+	src: url('../webfonts/376EEB_0_0.eot?#iefix') format('embedded-opentype'), url('../webfonts/376EEB_0_0.woff2') format('woff2'), url('../webfonts/376EEB_0_0.woff') format('woff'), url('../webfonts/376EEB_0_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'VAGRoundedLTPro-Thin';
+	src: url('../webfonts/376EEB_1_0.eot');
+	src: url('../webfonts/376EEB_1_0.eot?#iefix') format('embedded-opentype'), url('../webfonts/376EEB_1_0.woff2') format('woff2'), url('../webfonts/376EEB_1_0.woff') format('woff'), url('../webfonts/376EEB_1_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'VAGRoundedLTPro-Bold';
+	src: url('../webfonts/376EEB_2_0.eot');
+	src: url('../webfonts/376EEB_2_0.eot?#iefix') format('embedded-opentype'), url('../webfonts/376EEB_2_0.woff2') format('woff2'), url('../webfonts/376EEB_2_0.woff') format('woff'), url('../webfonts/376EEB_2_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'VAGRoundedLTPro-Light';
+	src: url('../webfonts/376EEB_3_0.eot');
+	src: url('../webfonts/376EEB_3_0.eot?#iefix') format('embedded-opentype'), url('../webfonts/376EEB_3_0.woff2') format('woff2'), url('../webfonts/376EEB_3_0.woff') format('woff'), url('../webfonts/376EEB_3_0.ttf') format('truetype');
+}
+
+/* HEADER */
+body {
+	// Menu / before Mega
+	.scheme_dark .sc_layouts_menu_popup .sc_layouts_menu_nav > li > a,
+	.scheme_dark .sc_layouts_menu_nav > li li > a {
+		font-weight: 100;
+		letter-spacing: .5px;
+		font-family: "VAGRoundedLTPro-Thin", sans-serif;
+	}
+
+	// Shop Submenu / before MegaMenu
+	.sc_layouts_menu_nav > li.shop-mp ul {
+		width: 16em;
+	}
+
+	// CartWidget
+	.scheme_dark .sc_layouts_cart_widget {
+		border-color: $primary-color-dark-blue;
+		background-color: $grey;
+		width: 100%;
+		min-width: 400px;
+
+		.woocommerce ul.cart_list li {
+			a {
+				font-weight: 100;
+
+				&:hover {
+					color: white;
+				}
+
+				.delivery-time-info, img {
+					display: none;
+					visibility: hidden;
+				}
+
+				&.remove_from_cart_button {
+					color: $tertiary-color-red !important;
+				}
+
+			}
+
+			.quantity, span.amount {
+				color: white;
+				font-weight: 100;
+			}
+		}
+
+		.total {
+			border-color: lighten($grey, 10%) !important;
+			border-bottom: 0 none;
+			margin-bottom: 0.17em;
+
+			strong {
+				color: white !important;
+				font-weight: 100;
+			}
+		}
+
+		.woocommerce span.amount {
+			color: white;
+			font-weight: 100;
+		}
+	}
+	.top_panel .sc_layouts_row, .sc_layouts_row input[type="text"] {
+		font-weight: 100;
+	}
+}
