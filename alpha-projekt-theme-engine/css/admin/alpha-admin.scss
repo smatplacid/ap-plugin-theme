@@ -1,0 +1,28 @@
+/* Highlight CAT Widget -> Single View */
+body {
+	&.post-type-schule {
+		#kategoriediv {
+			background: gainsboro;
+		}
+	}
+}
+
+.acf-inline, .acf-field[data-width].acf-inline {
+	min-height: unset !important;
+	display: inline-block;
+	float: none;
+}
+
+.acf-field.admin_field {
+	//display: none;
+}
+
+#ang_angebote_wrapper iframe {
+	height: 100px !important;
+}
+
+#advanced-sortables {
+	.wpgmp_metabox_container #wpgmp_metabox_location {
+		width: 100%;
+	}
+}

@@ -1,5 +1,12 @@
 <?php
 
+// Add Admin CSS
+function ap_custom_admin_css() {
+	echo '<link rel="stylesheet" href="' . get_stylesheet_directory_uri() . '/alpha-projekt/alpha-admin.css" type="text/css" media="all" />';
+}
+add_action( 'admin_head', 'ap_custom_admin_css' );
+
+// AquaResizer
 require_once(ALPHA_PROJEKT_THEME_ENGINE_PATH . '/libs/AquaResizer.php');
 
 function ap_footer_enqueue() {
